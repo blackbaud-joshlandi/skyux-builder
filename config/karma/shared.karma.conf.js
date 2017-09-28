@@ -30,6 +30,14 @@ function getConfig(config) {
         watched: false
       }
     ],
+    plugins: [
+      'karma-chrome-launcher',
+      'karma-coverage',
+      'karma-jasmine',
+      'karma-mocha-reporter',
+      'karma-sourcemap-loader',
+      'karma-webpack'
+    ],
     preprocessors: {
       '../../utils/spec-styles.js': ['webpack'],
       '../../utils/spec-bundle.js': ['coverage', 'webpack', 'sourcemap']
